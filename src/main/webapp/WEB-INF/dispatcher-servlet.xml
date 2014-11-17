@@ -28,5 +28,5 @@ http://www.springframework.org/schema/security
 
 	<mvc:annotation-driven />
 	
-	<security:global-method-security secured-annotations="enabled" jsr250-annotations="enabled" pre-post-annotations="enabled" />
+	<security:global-method-security secured-annotations="enabled" jsr250-annotations="enabled" pre-post-annotations="enabled" authentication-manager-ref="myAuthManager"/>
 </beans>

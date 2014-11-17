@@ -19,12 +19,13 @@
 	
       <security:http use-expressions="true"
       				 create-session="stateless"
-      				 entry-point-ref="unauthorizedEntryPoint">
+      				 entry-point-ref="unauthorizedEntryPoint"
+      				 authentication-manager-ref="myAuthManager">
       				 <security:custom-filter ref="restfulAuthenticationFilter2" position="FORM_LOGIN_FILTER"/>
       				
       </security:http>
       
-      <security:authentication-manager>
+      <security:authentication-manager id="myAuthManager" alias="myAuthManager">
 	  <security:authentication-provider>
 	    <security:user-service>
 		<security:user name="mkyong" password="123456" authorities="ROLE_USER" />
