@@ -1,9 +1,15 @@
 package com.spring.models;
 
+import org.jsondoc.core.annotation.ApiObject;
+import org.jsondoc.core.annotation.ApiObjectField;
+
+@ApiObject(name = "ServiceAddress", description = "This represents a service address JSON object.")
 public class ServiceAddressResponse {
 
+	@ApiObjectField(required = true)
 	private String street1;
 	
+	@ApiObjectField
 	private String city;
 
 	public String getStreet1() {

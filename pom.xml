@@ -98,9 +98,14 @@
 	<version>2.4.3</version>
 </dependency>
 <dependency>
-	<groupId>com.mangofactory</groupId>
-	<artifactId>swagger-springmvc</artifactId>
-	<version>1.0.2</version>
+        <groupId>org.jsondoc</groupId>
+        <artifactId>jsondoc-springmvc</artifactId>
+        <version>1.1.14</version>
+</dependency>
+<dependency>
+        <groupId>org.jsondoc</groupId>
+        <artifactId>jsondoc-ui</artifactId>
+        <version>1.1.14</version>
 </dependency>
 
     <dependency>
