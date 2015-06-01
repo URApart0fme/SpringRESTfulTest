@@ -17,7 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.models.MyModel;
 
-@Controller
 public class HelloWorldController {
 	
 	private AuthenticationManager authenticationManager;

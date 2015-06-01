@@ -24,14 +24,14 @@ http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
 http://www.springframework.org/schema/security
       http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
+ 	<context:component-scan base-package="com.spring.config" />
 	<context:component-scan base-package="com.spring.controllers" />
 	<context:annotation-config />
 	
 	<mvc:annotation-driven />
 	<mvc:default-servlet-handler/>
 	
+	<!-- 
 	<security:global-method-security secured-annotations="enabled" jsr250-annotations="enabled" pre-post-annotations="enabled" />
-	
-	<!-- Configuration Bean -->
-	<bean id="documentationConfig" class="com.mangofactory.swagger.configuration.SpringSwaggerConfig"/>
+	 -->
 </beans>

@@ -14,7 +14,7 @@ import com.wordnik.swagger.annotations.ApiResponses;
 
 @RequestMapping(value = "/serviceaddresses")
 @RestController
-@Api(value = "/serviceaddresses", description = "This API is used to retrieve the Service Addresses in the footprint.")
+@Api(value = "serviceaddresses", description = "Test Desc", position = 1)
 public class SwaggerTestController {
 
 	@RequestMapping(method = RequestMethod.GET, produces = {MediaType.APPLICATION_JSON_VALUE})
